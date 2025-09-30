@@ -3,10 +3,13 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "next dev",
+        "dev": "next dev -p 3000",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "install:fix": "npm install --legacy-peer-deps",
+        "clean": "rm -rf .next node_modules package-lock.json",
+        "fresh": "npm run clean && npm run install:fix && npm run dev"
     },
     "dependencies": {
         "@emotion/react": "^11.14.0",

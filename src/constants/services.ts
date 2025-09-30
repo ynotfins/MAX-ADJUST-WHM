@@ -5,6 +5,7 @@ export const services = [
         altText: "SERV1429_L1sp_Icons_Dark_Fire.svg",
         label: "Fire Damage Claims",
         href: "/fire-damage",
+        icon: "solar:fire-bold",
     },
     {
         id: "water-damage",
@@ -12,6 +13,7 @@ export const services = [
         altText: "SERV1429_L1sp_Icons_Dark_Water.svg",
         label: "Water Damage Claims",
         href: "/water-damage",
+        icon: "solar:water-drops-bold",
     },
     {
         id: "storm-damage",
@@ -19,6 +21,7 @@ export const services = [
         altText: "SERV1429_L1sp_Icons_Dark_Storm.svg",
         label: "Storm Damage Claims",
         href: "/storm-damage",
+        icon: "solar:thunder-bold",
     },
     {
         id: "mold-damage",
@@ -26,6 +29,7 @@ export const services = [
         altText: "SERV1429_L1sp_Icons_Dark_Mold.svg",
         label: "Mold Damage Claims",
         href: "/mold-damage",
+        icon: "solar:bacteria-bold",
     },
     {
         id: "commercial",
@@ -33,6 +37,7 @@ export const services = [
         altText: "SERV1429_L1sp_Icons_Dark_Commercial.svg",
         label: "Commercial Claims",
         href: "/commercial",
+        icon: "solar:buildings-bold",
     },
     {
         id: "general-cleaning",
@@ -40,6 +45,7 @@ export const services = [
         altText: "SERV1429_L1sp_Icons_Dark_Cleaning_Services.svg",
         label: "General Cleaning",
         href: "/general-cleaning",
+        icon: "solar:washing-machine-bold",
     },
     {
         id: "specialty-cleaning",
@@ -47,6 +53,7 @@ export const services = [
         altText: "SERV1429_L1sp_Icons_Dark_COVID_Cleaning.svg",
         label: "Specialty cleaning",
         href: "/specialty-cleaning",
+        icon: "solar:broom-bold",
     },
     {
         id: "construction",
@@ -54,6 +61,7 @@ export const services = [
         altText: "SERV1429_L1sp_Icons_Dark_Construction.svg",
         label: "Construction",
         href: "/construction",
+        icon: "solar:hammer-bold",
     },
 ];
 

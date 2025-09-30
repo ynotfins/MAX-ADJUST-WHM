@@ -1,0 +1,40 @@
+==========================================
+     MAX ADJUST WEB APP - START HERE
+==========================================
+
+QUICK START - FIRST TIME SETUP:
+-------------------------------
+1. Double-click: fix-and-start.bat
+
+This will handle the dependency issues and start your server.
+
+IF YOU SEE DEPENDENCY ERRORS:
+-----------------------------
+We have a known conflict between HeroUI and Tailwind CSS versions.
+The fix-and-start.bat script handles this automatically.
+
+AVAILABLE SCRIPTS:
+------------------
+• fix-and-start.bat    - Fixes deps & starts server (USE THIS FIRST)
+• start-dev-clean.bat  - Clean start with legacy deps
+• install-deps.bat     - Just install dependencies
+• quick-start.bat      - Fast start (after deps installed)
+• check-system.bat     - Verify your setup
+
+SERVER DETAILS:
+---------------
+URL: http://localhost:3000
+Port: 3000
+Stop: Press Ctrl+C
+
+TROUBLESHOOTING:
+----------------
+1. Always use the provided .bat scripts
+2. They handle the --legacy-peer-deps flag automatically
+3. If issues persist, delete node_modules and try again
+
+For more details, see:
+- DEV-SERVER-INSTRUCTIONS.md
+- DEPENDENCY-FIX.md
+
+==========================================

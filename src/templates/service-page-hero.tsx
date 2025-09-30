@@ -111,9 +111,8 @@ export default function ServicePageHero({
             <section className="container">
                 <div className="text-center max-w-4xl mx-auto">
                     <h2 className="text-2xl lg:text-3xl font-bold mb-6">
-                        <span className="text-red-500 font-bold italic">
-                            INSURANCE COMPANIES NOTORIOUSLY DENY LARGE CLAIMS
-                            BECAUSE OF TECHNICALITIES YOU WERE UNAWARE OF.
+                        <span className="text-primary font-semibold">
+                            Trusted Public Adjusters Focused On Your Best Outcome
                         </span>
                     </h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
@@ -142,13 +141,23 @@ export default function ServicePageHero({
                                 service.id === activeTab ? "page" : undefined
                             }
                         >
-                            <Image
-                                src={service.imgSrc}
-                                alt={service.altText}
-                                width={96}
-                                height={96}
-                                className="w-24 h-24 mb-4"
-                            />
+                            {service.icon ? (
+                                <Icon
+                                    icon={service.icon}
+                                    className={cn("w-16 h-16 mb-4", {
+                                        "text-white": service.id === activeTab,
+                                        "text-primary": service.id !== activeTab,
+                                    })}
+                                />
+                            ) : (
+                                <Image
+                                    src={service.imgSrc}
+                                    alt={service.altText}
+                                    width={96}
+                                    height={96}
+                                    className="w-24 h-24 mb-4"
+                                />
+                            )}
                             <span
                                 className={cn("text-sm font-medium", {
                                     "text-black": service.id === activeTab,
@@ -183,7 +192,7 @@ export default function ServicePageHero({
                         <CheckList items={checklists.do} />
                     </div>
                     <div className="flex flex-col gap-lg bg-white p-8 rounded-xl shadow-sm">
-                        <h2 className="text-2xl lg:text-4xl uppercase font-black text-red-500">
+                        <h2 className="text-2xl lg:text-4xl uppercase font-black text-secondary">
                             What not to do
                         </h2>
                         <CheckList items={checklists.dont} isCross />

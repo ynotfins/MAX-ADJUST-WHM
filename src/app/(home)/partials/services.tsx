@@ -1,6 +1,7 @@
 import { Link } from "next-view-transitions";
 import Image from "next/image";
 import services from "~/constants/services";
+import Icon from "~/components/icon";
 
 export default function Services() {
     return (
@@ -29,13 +30,20 @@ export default function Services() {
                             <div className="flex flex-col items-center text-center">
                                 {/* Icon Container */}
                                 <div className="icon-container bg-primary/5 group-hover:bg-primary/10 mb-6 border border-primary/10 group-hover:border-primary/20">
-                                    <Image
-                                        src={service.imgSrc}
-                                        alt={service.altText}
-                                        className="w-10 h-10 lg:w-12 lg:h-12 transition-transform duration-300 group-hover:scale-110"
-                                        width={48}
-                                        height={48}
-                                    />
+                                    {service.icon ? (
+                                        <Icon
+                                            icon={service.icon}
+                                            className="w-10 h-10 lg:w-12 lg:h-12 text-primary group-hover:scale-110 transition-transform duration-300"
+                                        />
+                                    ) : (
+                                        <Image
+                                            src={service.imgSrc}
+                                            alt={service.altText}
+                                            className="w-10 h-10 lg:w-12 lg:h-12 transition-transform duration-300 group-hover:scale-110"
+                                            width={48}
+                                            height={48}
+                                        />
+                                    )}
                                 </div>
 
                                 {/* Service Name */}

@@ -1,0 +1,35 @@
+HOW TO CREATE THE ZIP FILE
+==========================
+
+Option 1: Using the Batch File
+------------------------------
+1. Double-click on "create-webapp-zip.bat"
+2. The zip file will be created automatically
+
+Option 2: Manual Creation
+-------------------------
+1. Select these folders and files:
+   - src (folder)
+   - public (folder)
+   - .vscode (folder)
+   - package.json
+   - tailwind.config.ts
+   - next.config.ts
+   - tsconfig.json
+   - postcss.config.mjs
+   - content-collections.ts
+   - eslint.config.mjs
+   - README.md
+   - WEBAPP-REDESIGN-SUMMARY.md
+
+2. Right-click on the selection
+3. Choose "Send to" > "Compressed (zipped) folder"
+4. Name it: MAX-ADJUST-WEBAPP-REDESIGN.zip
+
+Option 3: Using PowerShell
+--------------------------
+Run this command in PowerShell:
+
+Compress-Archive -Path src, public, *.json, *.ts, *.mjs, *.md, .vscode -DestinationPath MAX-ADJUST-WEBAPP-REDESIGN.zip -Force
+
+The zip file will contain all your website files with the complete web app redesign!

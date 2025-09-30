@@ -1,0 +1,68 @@
+{
+  "name": "MAX ADJUST - Professional Insurance Adjusters",
+  "short_name": "MAX ADJUST",
+  "description": "Licensed public adjusters helping property owners get maximum insurance settlements",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFFFFF",
+  "theme_color": "#3B82F6",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "finance", "utilities"],
+  "screenshots": [
+    {
+      "src": "/assets/videos/Example/Screenshot 2025-09-29 200720.png",
+      "sizes": "1920x1080",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/videos/Example/Screenshot 2025-09-29 200711.png",
+      "sizes": "1920x1080",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "File a Claim",
+      "short_name": "File Claim",
+      "description": "Start your insurance claim evaluation",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Call Now",
+      "short_name": "Call",
+      "description": "24/7 Emergency Hotline",
+      "url": "tel:8889995740",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    }
+  ]
+}
